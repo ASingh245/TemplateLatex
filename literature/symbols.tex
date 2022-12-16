@@ -1,0 +1,133 @@
+\newglossaryentry{symb:Pi}{name=\ensuremath{\pi},
+	description={Geometrical value},
+	unit={},
+	type=symbolslist}
+
+\newglossaryentry{height}{name=\ensuremath{h},
+	description={Height of tower},
+	unit={\si{m}},
+	type=symbolslist}
+
+\newglossaryentry{energyconsump}{name=\ensuremath{P},
+	description={Energy consumption},
+	unit={\si{kW}},
+	type=symbolslist}
+
+\newglossaryentry{symb:XX}{
+	name=$x$,
+	description={Sensorsignal},
+	unit={-}, 
+	type=symbolslist
+}
+
+\newglossaryentry{symb:Phi}{
+	name=$\varphi$,
+	description={Angle},
+	unit={\si{Degree}}, 
+	type=symbolslist
+}
+
+
+%\chapter*{List of Symbols}
+%\begin{longtable}[l]{l l}
+%\multicolumn{2}{l}{\large\textbf{Radar Signal Processing and Noise Filtering}}\\
+%\\
+%$s_{tx}$ & Transmitted signal from radar system\\
+%$s_{rx}$ & Received signal on a radar system\\
+%$s$ & Signal after the mixer stage, equals to $s_{tx} s_{rx}$\\
+%$A$ & Amplitude of sent signal $s_{tx}$\\
+%$H$ & Amplitude of received signal $s_{rx}$\\
+%$f(t)$ & Instantaneous frequency\\
+%$\phi(t)$ & Instantaneous phase\\
+%$B$  & Frequency bandwidth $f_{max} - f_{min}$ \\
+%$f_o$ & Initial frequency, which equals to $f_{min}$\\
+%$\phi_o$ & Initial phase\\
+%$T$ & Period of a chirp\\
+%$\tau$ & Time delay between $s_{tx}$ and $s_{rx}$\\
+%$m$ & Chirp's slope $\frac{B}{T}$\\
+%$n$ & Chirps index\\
+%$N$ & Number of chirps per frame \\
+%$t_s$ & Local time in a chirp $0 \leq t_s < T$\\
+%$R$ & Distance of target to radar\\
+%$R_{min}$ & Minimum range that radar can distinguish between \\&two targets, called range resolution\\
+%$R_{max}$ & Maximum distance where radar can capture a target\\
+%$v$ & Radial velocity between target and radar\\
+%$v_{min}$ & Minimum velocity difference between two targets that radar \\&can measure, called velocity resolution\\
+%$v_{max}$ & Maximum velocity that radar can measure\\
+%$c$ & Speed of light constant\\
+%$f_b$ & Beat frequency (= $\frac{2BR}{cT}$)\\
+%$f_D$ & Doppler frequency shift (= $\frac{2vf_o}{c}$)\\
+%$d$ & Distance between two antennas\\
+%$\lambda$ & Wavelength of transmitted signal\\
+%$\theta$ & Angle of arrival\\
+%$A_n$ & $2nd$ Norm of $nth$ chirp, is called chirps energy \\
+%$x[n]$& $nth$ Element in a chirp (time domain)\\
+%$X[k]$ & $kth$ Frequency bin of a chirp (frequency domain)\\
+%$\sigma$ & Standard deviation \\
+%$\sigma^2$ & Variance \\
+%$\mu, \overline{~\cdot~}$ & Mean \\
+%$w$ & Window size \\
+%$\psi$ & Adaptive thresholds value \\
+%$r$ & Filter's response on $A_n$\\
+%$\mu_r$ & Mean of the filters response $r$ \\
+%$r_{max}$ & Maximum value of filters response \\
+%$r_{min}$ & Minimum value of filters response \\
+%$\alpha$ & Adaptive factor\\
+%$\alpha_{max}$ & Maximum adaptive factor\\
+%$\alpha_{min}$ & Minimum adaptive factor\\
+%\\
+%\large\textbf{Machine Learning}\\
+%\\
+%$\Theta$ & Set of finite classes\\
+%$\theta$ & Certain class \\
+%$\mathbf{x}(n), \mathbf{x}_n$ & $nth$ Train data point (a column vector) \\
+%$x_{i, n}$ & $ith$ element of $nth$ data point vector \\
+%$\mathbf{z}$ & Test (new) data point vector \\
+%$d(\mathbf{x}, \mathbf{z})$& Euclidean distance between 2 vectors\\
+%$H$, $M$ & Hyperplane and margin, used in SVM\\
+%$\mathbf{w}_i^l$ & Weight vector, $l$ and $i$ are the indices of a current layer \\&in a NN and its neuron\\
+%$b_i^l$, $\mathbf{b}_i^l$ & Bias or offset and bias vector\\
+%$\Phi(\cdot)$ & Activation function, could be sigmoid, ReLU, etc.\\
+%$a_i^l$ & Output of a linear combiner ($1st$ stage of a neuron)\\
+%$y_i$& Label of a training point $\mathbf{x}_i$\\
+%$J(\cdot)$ & Cost function/objective function which has to be minimized\\
+%$e(n)$ & Error between the label and network's output and \\&$n$ is the iteration index\\
+%$\gamma_i^l$ & Back-propagation error signal of a certain neuron $i$ at a \\&certain layer $l$\\
+%$\mathbf{r}$ & Forget gate in an GRU cell\\
+%$\mathbf{q}$ & Update gate an GRU cell\\
+%$\mathbf{o}^t$ & Output of a cell at time step $t$\\
+%$\mathbf{s^t}$ & Final hidden state of a cell at time step $t$\\
+%$\mathbf{\tilde{s}^t}$ & New/temporary hidden state at time $t$\\
+%$\mathbf{U, V, W}$ & Weight matrices which are learning during training an RNN\\
+%$E_{in}$ & In-sample error (training error, bias) \\
+%$E_{out}$ & Out-of-sample error (generalization error, variance)\\
+%$E_{test}$ & Test error\\
+%$E_{valid}$ & Validation error\\
+%$P(\cdot), \mathbb{P}[\cdot]$ & Probability operator\\
+%$\odot$ & Element-wise product operator, is called Hadamard product \\
+%$f(\mathbf{x}_i)$, $y_i$ & Target function output of $ith$ data point \\
+%$g(\mathbf{x}_i)$ & Learned/approximated function (after training phase) output\\& of $ith$ data point \\
+%$E_{valid}$ & Error on validation set \\
+%$\lambda_i$ & $ith$ Eigenvalue of a certain matrix \\
+%$\eta$ & Portion of variance \\
+%$\mathbf{X}$ & Data matrix, with $N$ columns, each is a different data \\&point with $P$ rows. Rows represent the features of \\&one data point\\
+%$\mathbf{Y}$ & Projected data matrix of size $M\times N$, where $M<P$\\
+%$\mathbf{C_X}$ & Covariance matrix of data matrix $\mathbf{X}$\\
+%$\mathbf{C_Y}$ & Covariance matrix of projected data matrix $\mathbf{Y}$\\
+%$\mathbf{U}$ & Matrix of eigenvectors of $\mathbf{C_X}$\\
+%$\mathbf{L}$ & Diagonal matrix of eigenvalues of $\mathbf{C_X}$\\
+%$\mathbf{S}$ & Transformation matrix which maps $\mathbf{X}$ to $\mathbf{Y}$ \\
+%$\angle\cdot$ & Angle operator \\
+%$|\cdot|$ & Absolute operator \\
+%$L$ & Number of samples in a chirp\\
+%$W$ & Number of chirps in a gesture\\
+%$C$ & Number of radar channels\\
+%$C(n, r)$ & Set of all $r$ combinations of $n$ things, and \\& its size is determined by $\frac{n!}{r!(n-r)!}$\\
+%$c_{i,j}$& Covariance operation between 2 dimensions $i$ and $j$\\
+%$\mathbf{F}$ & Sub-matrix of a frame (rv-map)\\
+%$f_{i, j}$ & Element in the sub-matrix $\mathbf{F}$ \\
+%$\mu_F$& Mean of a sub-matrix $\mathbf{F}$\\
+%$\sigma_F$& Standard deviation of a sub-matrix $\mathbf{F}$\\
+%$\hat{f_{i, j}}$ & Normalized form of $f_{i, j}$ through $\mu_F$ and $\sigma_F$\\
+%
+%\end{longtable}
